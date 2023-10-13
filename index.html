@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="計算物理,春の学校,2024,数値計算,GPU,機械学習,量子計算,格子QCD,計算物性">
+  <meta name="description" content="計算物理 春の学校 2024">
+  <meta name="author" content="Tatsuhiro Hattori">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>
+    計算物理 春の学校 2024
+  </title>
+
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- jQuery.jsの読み込み -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+  <!-- スムーズスクロール部分の記述 -->
+  <script>
+    $(function () {
+      // #で始まるアンカーをクリックした場合に処理
+      $('a[href^=#]').click(function () {
+        // スクロールの速度
+        var speed = 400; // ミリ秒
+        // アンカーの値取得
+        var href = $(this).attr("href");
+        // 移動先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMJPK4RSDX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WMJPK4RSDX');
+  </script>
+</head>
+
+<body>
+  <header id="top">
+    <a href="index.html">
+      <h1>計算物理 春の学校 2024</h1>
+    </a>
+    <h4>沖縄県市町村自治会館 2024年3月11日 - 15日</h4>
+  </header>
+
+  <nav id="header">
+    <ul>
+      <li><a href="#aim">開催趣旨</a></li>
+      <li><a href="#venue_date">会場/日程</a></li>
+      <li><a href="#program">プログラム</a></li>
+      <li><a href="#group_photo">集合写真</a></li>
+      <li><a href="#last_school">昨年の様子</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="aim">
+      <h1>開催趣旨</h1>
+      <p>
+        計算機を使った研究は、 高エネルギー物理学から物性物理学まで、 幅広い物理学の分野で重要な役割を担っています。
+        モンテカルロ法、 第一原理計算、 テンソルネットワークなど従来から活用されている手法に加え、
+        機械学習や量子計算などの新機軸も注目を浴びています。 また、 プログラミングの観点からは、
+        テスト駆動型開発などのソフトウェア工学の導入、 Juliaなどの最新のプログラミング言語の普及が進んでいます。
+        これら多彩な計算理論やプログラミング開発技術の普及を促進するには、 高エネルギー、
+        物性などの分野の垣根を超えた交流の場が必要と私たちは考えました。
+      </p>
+
+      <p>
+        そこで、 物理学分野の若手育成および人材交流を目的として、 以下の通り、
+        「計算物理 春の学校 2023」を開催します。
+        今回は特に機械学習、 量子計算を主なテーマに据えますが、 プログラミング開発力の育成講座、
+        物性各分野のアプリの講習会など幅広い講義を用意しています。 機械学習、 量子計算だけではなく、
+        計算物理全般に興味を持つ幅広い層の方々の研究に役立つことを期待しています。
+      </p>
+
+      <p>
+        スクールの主なターゲットは大学院生や若手ポスドク研究員ですが、
+        上記テーマに興味をお持ちの方でしたらどなたでも歓迎いたします。
+      </p>
+    </section>
+
+    <section id="venue_date">
+      <h1>会場/日程</h1>
+      <ul>
+        <li>会場: <a href="http://okinawa-jichikaikan.com/">沖縄県市町村自治会館</a></li>
+        <li>開催方式: 対面とオンラインのハイブリッド形式 (ただし、対面がメイン)</li>
+        <li>日程: 2024年3月11日 (月) - 15日 (金)</li>
+      </ul>
+    </section>
+
+    <section id="program">
+      <h1>プログラム</h1>
+      <h3><a href="">時間割 (準備中)</a></h3>
+      <h3><a href="https://www.youtube.com/channel/UC7zQqYdH0qH4FPrhiutRAvQ">動画公開用 Youtube チャンネル</a></h3>
+      <p>
+        プログラムは大きく分けて講義と研究会 (ポスターセッション) の2つに分かれます。
+        また、 本スクールにご協力いただいた企業の皆様による企業紹介の場を設けます。
+      </p>
+      <h3>[講義]</h3>
+      <p>(準備中)</p>
+      <!-- <p>
+        講義は単独で行う<b>共通講義</b>と、 複数同時に行う<b>個別講義</b>を実施します。
+        講義内容は大学院初年度程度の物理学及び数値計算の基礎的知識のみを前提とし、
+        量子計算や機械学習に関する予備知識は問いません。
+        いくつかの個別講義は、 その他の共通講義または個別講義の内容と関連しています。
+        対面とオンラインどちらでもご参加いただけます。
+        ただし、 オンライン環境は画面共有など最低限のものとし、 対面参加優先で実施します。
+      </p>
+      <p>
+        予定されている講義は以下の通りです。
+      </p> -->
+      <!-- <h3>3/11 (月) 9:00 - 17:00</h3>
+      <h3>&lt;共通講義&gt;</h3> -->
+      <!-- <ul>
+        <li>量子計算入門</li>
+        <ul>
+          <li>講師: 水上 渉 (大阪大学)</li>
+          <li>
+            概要: 量子コンピューティングについて、 概要からはじめ、 基礎的な操作とアルゴリズムについて説明します。
+            量子コンピューティングについての事前知識を持たない人を主な対象とした講義になります。
+            量子コンピューティングに関するプログラム実習は、 ３日目にある個別講義「量子計算入門＆ハンズオン」でおこないます。
+          </li>
+        </ul>
+        <li>Julia入門</li>
+        <ul>
+          <li>講師: 永井 佑紀 (JAEA)</li>
+          <li>
+            概要: 数値計算を行うにあたって、 プログラミング言語の選択は重要である。
+            Juliaは科学技術計算を行うために作られた非常に新しい言語である (2018年にバージョン1がリリース)。
+            Pythonのように書きやすく習得しやすく、 Matlabのように簡単な数学のような記述で線形代数が扱え、
+            FortranやCのような計算速度が速い言語である。 関数電卓のような簡便さで数式をコードに変えることができるため、
+            プログラミング特有の些事に悩まされることなく目の前の物理の問題に注力することが可能である。 本講義では、
+            Julia言語の特色を述べつつ、 具体例を交えながら、 数値計算を行う際にどのように便利かについて述べる。
+            なお、 講義では、 学部で履修する程度のプログラミング講習 (言語は問わない) を受講している事を前提とする。
+          </li>
+          <li>
+            参考文献:
+            <a href="https://www.kspub.co.jp/book/detail/5282823.html">永井佑紀 著、「1週間で学べる! Julia数値計算プログラミング」(KS情報科学専門書)</a>
+          </li>
+          <li>講義資料:
+            [<a href="materials/Nagai_2023_okinawa.pdf">スライド</a>]
+            [<a href="materials/2dtest.jl">ライブコーディングコード</a>]
+            [<a href="materials/3body.jl">3体問題コード</a>]
+            [<a href="https://youtu.be/l_f_8I_8v0k">動画</a>]
+          </li>
+        </ul>
+        <li>プログラム開発の技術</li>
+        <ul>
+          <li>講師: 藤堂 眞治 (東京大学)</li>
+          <li>
+            概要: 計算物理のためのプログラム開発技術、 特に、 動作するきれいなコードを楽に開発するための技術を紹介する。
+            具体的には、 テスト駆動開発、 継続的インテグレーション、 バージョン管理を中心に、 C++とPythonを例にとって解説し、
+            実習を行う。
+          </li>
+          <li>講義資料:
+            [<a href="materials/tdd-tutorial.pdf">スライド</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jce7QEoEDWHnXni8j-q7m1Qt">動画</a>]
+          </li>
+        </ul>
+      </ul>
+      <h3>3/14 (火) 9:00 - 17:00</h3>
+      <h3>&lt;共通講義&gt;</h3>
+      <ul>
+        <li>GPU コンピューティング入門 & ハンズオン
+        </li>
+        <ul>
+          <li>講師: 丹 愛彦 (NVIDIA)</li>
+          <li>
+            概要: GPU コンピューティングのベースとなる GPU のアーキテクチャを、 そのプログラミング環境である CUDA
+            などを通して概説する。 ハンズオンでは、サンプル コードを用いて Python による GPU コンピューティングを体験する。
+          </li>
+          <li>実習部分は対面でのみ参加可能（オンラインでも資料の閲覧は可能）</li>
+          <li>実習には筑波大学計算科学研究センターの <a href="https://www.ccs.tsukuba.ac.jp/supercomputer/#Cygnus">Cygnus</a> を使用</li>
+          <li>講義資料:
+            [<a href="materials/Intro_GPU_computing.pdf">GPU コンピューティング入門</a>]
+            [<a href="materials/Lab1.pdf">ハンズオン Lab1</a>]
+            [<a href="materials/Lab2.pdf">ハンズオン Lab2</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jce8jVquYw2gtzqmEIuh8Mqe">動画</a>]
+          </li>
+        </ul>
+      </ul> -->
+      <!-- <h3>&lt;個別講義&gt;</h3> -->
+      <!-- <ul>
+        <li>MateriApps LIVE! で始める計算物性科学</li>
+        <ul>
+          <li>講師: 本山 裕一 (東京大学)</li>
+          <li>
+            概要:
+            <a href="https://ma.issp.u-tokyo.ac.jp/materiapps-live">MateriApps LIVE!</a>
+            は計算物性科学の様々なソフトウェア、 例えば
+            <a href="https://www.quantum-espresso.org/">Quantum ESPRESSO</a> (第一原理電子状態計算) や
+            <a href="https://www.pasums.issp.u-tokyo.ac.jp/usage-hphi">HPhi</a>
+            (量子格子模型の厳密対角化) などがプリインストールされた Debian GNU/Linux 環境である。
+            本演習では MateriApps LIVE! の使い方を学んだ後、 実際に HPhi などのソフトウェアを実行することで計算物性科学を体験する。
+          </li>
+          <li>講義資料:
+            [<a href="materials/20230314_MALIVE.pdf">スライド</a>]
+          </li>
+        </ul>
+        <li>格子QCD入門</li>
+        <ul>
+          <li>講師: 富谷 昭夫 (大阪国際工科専門職大学 IPUT Osaka)</li>
+          <li>
+            概要: 格子 QCD は数学的に厳密に定義され、 定量的に計算できる場の量子論の一種である。
+            この講義は、 理学部物理学科 3 年生までの標準的なコースで習うような電磁気学、 解析力学、
+            統計力学、 相対論等を学んだ学生に向けた格子 QCD 入門である。
+            場の量子論の枠組み、 格子上の場の理論を概観することからはじめ、
+            格子 QCD の教科書に至るまでを解説する。
+            またアルゴリズムとして HMC (ハイブリッドモンテカルロ法/ハミルトニアンモンテカルロ法) を
+            解説し、 最後に
+            <a href="https://github.com/akio-tomiya/LatticeQCD.jl">LatticeQCD.jl</a>
+            を用いて格子 QCD の数値計算を行ってみる。
+          </li>
+          <li>講義資料:
+            [<a href="materials/LQCD_lecture_School_slidefinal.pdf">スライド</a>]
+            [<a href="materials/LQCD_lecture_School_textbookfinal.pdf">ノート</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jceqClc19V3-9aLdH-gSUvaO">動画</a>]
+          </li>
+        </ul>
+        <li>虚時間グリーン関数に対するスパースモデリング入門</li>
+        <ul>
+          <li>講師: 品岡 寛 (埼玉大学)</li>
+          <li>
+            概要: 虚時間 (松原)グリーン関数は場の量子論計算で広く用いられている。 近年、 虚時間グリーン関数に対する
+            「スパースモデリング技術」 が開発され、 物性における量子多体計算・第一原理計算に普及し始めている
+            (<a href="https://arxiv.org/abs/2106.12685">HS et al., arXiv:2106.12685</a>)。 これらの技術は、
+            スパースな虚時間・周波数グリッドを用いた高速・省メモリ・高精度な数値計算を可能にする。 本講義では、
+            基礎理論の紹介と
+            <a href="https://github.com/SpM-lab/sparse-ir">sparse-ir</a> (Python)/
+            <a href="https://github.com/SpM-lab/SparseIR.jl">SparseIR.jl</a> (Julia) ライブラリを用いた実習を行う。
+          </li>
+          <li>想定する受講者:<br>
+            虚時間グリーン関数形式を使った数値計算をしてみたい人を対象とし、グリーン関数論の標準的なテキスト
+            (物性理論だと、フェッターワレッカ、阿部龍蔵など)の基礎部分をすでに読んでいることを前提にします。レーマン表示、ダイソン方程式、２次摂動などの基本的な知識があればOKです。
+            <br><br>
+            後半の実習では、PythonもしくはJuliaを使います。線型代数計算 (行列のかけ算などの基本)やグラフプロットの経験があると望ましいです。Google Colab, VS
+            codeなどの開発環境を予め設定しておいてください (Slackで事前にサポートします)。
+            <br><br>
+            上記のように、グリーン関数の基礎が分かっていれば十分です。もし、物性理論専攻の人で、これから学びたい人には、「<a
+              href="http://www.kookai.pc.uec.ac.jp/kotaibutsuri/practical_guide_vol_1.pdf">久保公式とグリーン関数法の実践的基礎その1」</a>をお勧めします
+            (素粒子理論の人には勧めません)。
+          </li>
+          <li>講義資料:
+            [<a href="materials/lecture1.pdf">スライド (講義)</a>]
+            [<a href="materials/lecture2.pdf">スライド (実習)</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jcdTsPbSnKvIJGZFYv-nwH6s">動画</a>]
+          </li>
+        </ul>
+        <li>テンソルネットワーク法入門</li>
+        <ul>
+          <li>講師: 大久保 毅 (東京大学)</li>
+          <li>
+            概要: テンソルネットワークを用いた格子模型・量子多体系の計算手法として、 テンソル繰り込み群、
+            テンソルネットワーク状態法の基礎を解説し、 pythonを用いた実習を行う。
+          </li>
+          <li>講義資料:
+            [<a href="materials/計算物理春の学校2023：テンソルネットワーク法入門.pdf">スライド (講義)</a>]
+            [<a href="materials/計算物理春の学校2023：テンソルネットワーク法入門（実習）.pdf">スライド (実習)</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jcfQJbBd0NgsRnqh5ljQESi1">動画</a>]
+          </li>
+        </ul>
+      </ul>
+      <h3>3/15 (水) 9:00 - 17:00</h3>
+      <h3>&lt;共通講義&gt;</h3>
+      <ul>
+        <li>機械学習入門</li>
+        <ul>
+          <li>講師: 瀧 雅人 (立教大学)</li>
+          <li>
+            概要: この講義では、 機械学習のコンセプトや数理・統計的意味から初めて、
+            現在盛んに用いられている深層学習のアイデアまでを概観する。 特に最後には、
+            現在深層学習で広く用いられているTransformerについても解説したい。
+            また、 深層学習を用いた研究に役立つ広く用いられるライブラリについても簡単に紹介する。
+            <ul>
+              <li>機械学習：帰納推論と汎化</li>
+              <li>線形モデルと勾配降下法</li>
+              <li>表現学習とニューラルネット</li>
+              <li>Transformerによる機械学習</li>
+              <li>ライブラリ紹介</li>
+            </ul>
+          </li>
+          <li>講義資料:
+            [<a href="materials/MLOkinawa_Taki.pdf">スライド</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jce4eWt9kYueRvyXpWEQ4akW">動画</a>]
+          </li>
+        </ul>
+      </ul>
+      <h3>&lt;個別講義&gt;</h3>
+      <ul>
+        <li>量子計算入門 & ハンズオン</li>
+        <ul>
+          <li>講師: 和田 健太朗 (QunaSys)、 川久保 亮 (QunaSys)</li>
+          <li>
+            概要: 量子コンピューティングに関するプログラム実習をおこないます。 量子回路の構成からはじめ、 期待値推定や、
+            簡単な機械学習、 量子系の実時間発展などを量子コンピュータで実行するためのプログラム方法を学びます。
+            実際の量子コンピュータを使う演習も予定しています。 本講義での実習には Python と QunaSys
+            が開発している量子計算ライブラリ <a href="https://quri-parts.qunasys.com">QURI Parts</a> を使用します。
+          </li>
+          <li>本講義を受けられる方には共通講義の「量子計算入門」の受講を推奨します。</li>
+          <li>講義資料:
+            [ノート1
+            <a href="https://colab.research.google.com/drive/1-GpajHVPLYFFfYeXqKiPANDsGCKzCFe6?usp=share_link">(Google
+              Colab)</a>
+            <a href="materials/quantum-computation.pdf">(PDF)</a>]
+            [ノート2
+            <a href="https://colab.research.google.com/drive/19n3Oi_Cy5UawIkFJdsp8iYfXBCrgIbDc?usp=share_link">(Google
+              Colab)</a>
+            <a href="materials/real-machine.pdf">(PDF)</a>]
+            [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jcfmgwbsLMjpY_nOBxM2Ggq6">動画</a>]
+          </li>
+        </ul>
+        <li>第一原理計算による物性計算入門</li>
+        <ul>
+          <li>講師: 是常 隆 (東北大学)</li>
+          <li>
+            概要: 第一原理計算のコード quantum-ESPRESSO を用いて電子状態を計算する方法について、
+            webサイト
+            「<a href="http://www.cmpt.phys.tohoku.ac.jp/~koretsune/SATL_qe_tutorial/">quantum-ESPRESSO tutorial</a>」
+            をベースに解説し、 実習を行う。
+            また、
+            <a href="http://www.wannier.org/">wannier90</a>
+            を用いたモデル化などについても触れる予定である。
+          </li>
+          <li>「MateriApps LIVE!講習」を受講していることを推奨</li>
+        </ul>
+        <li>生成模型入門</li>
+        <ul>
+          <li>講師: 田中 章詞 (RIKEN AIP/iTHEMS)</li>
+          <li>
+            概要: 本講義における生成模型は、 ターゲット確率分布に似たモデル、 及びそれを訓練するテクニックの総称を表すとします。
+            本講義では簡単な生成模型の説明から始め、 近年よく使われる幾つかの具体的なモデル: ボルツマン機械、 変分自己符号化器、
+            敵対的生成ネットワーク、 自己回帰モデル、 拡散モデルについて説明する予定です。
+          </li>
+          <li>講義資料:
+            [<a href="materials/atanaka.pdf">スライド</a>]
+            [<a href="https://youtu.be/Z-NlgRE7FTY">動画</a>]
+          </li>
+        </ul>
+        <li>Introduction to normalizing flows for lattice field theory</li>
+        <ul>
+          <li>講師: Daniel Hackett (MIT)</li>
+          <li>
+            概要: Generating gauge field configurations using statistical sampling algorithms is one of
+            the dominant computational costs in the lattice quantum chromodynamics. History demonstrates
+            that improved algorithms for this task can provide access to new physics results; rapidly
+            developing machine learning methods present an unprecedented opportunity for such advancement.
+            One proposed method to accelerate configuration generation employs normalizing flows, a framework
+            for constructing machine-learned maps between probability distributions. I present a pedagogical
+            introduction to these methods and review the state of ongoing efforts to apply them to numerical
+            lattice quantum field theory.
+          </li>
+          <li>講義資料:
+            [<a href="materials/hackett-intro-to-flows-for-lft.pdf">スライド</a>]
+            [<a href="https://youtu.be/-lfLwHRfs6c">動画</a>]
+          </li>
+        </ul>
+      </ul> -->
+      <!-- <h3>[ポスターセッション]</h3>
+      <p>
+        既に研究テーマをお持ちの方を対象に、 ポスターセッションを設けます。
+      </p>
+      <ul>(準備中)</ul> -->
+      <!-- <h3><a href="posters/計算物理春の学校2023ポスターセッション.pdf">ポスターセッション案内</a></h3> -->
+      <!-- <p>
+        ポスター:
+        <a href="posters/4Yamazaki_comp_phys_2023_poster.pdf">[4]</a>
+        <a href="posters/5鄭_UTe2におけるトポロジカル結晶超伝導.pdf">[5]</a>
+        <a href="posters/9渡辺亮_計算物理春の学校.pdf">[9]</a>
+        <a href="posters/13narukawa_com_phys_2023.pdf">[13]</a>
+        <a href="posters/16koboritakumi_CompPhysSS2023_poster.pdf">[16]</a>
+        <a href="posters/17RMasuki_CompPhysSS.pdf">[17]</a>
+        <a href="posters/22矢作裕太_久保公式のベクトル化による電気伝導度計算の高速化.pdf">[22]</a>
+        <a href="posters/24西村皐_機械学習で探るFroggatt-Nielsen模型のフレーバー構造.pdf">[24]</a>
+        <a href="posters/25nagato_0314poster.pdf">[25]</a>
+        <a href="posters/26Hanxiang_XU_OkayamaUniv_comp_phys_spring_school_2023_poster.pdf">[26]</a>
+        <a href="posters/31計算物理春の学校_岡内_poster.pdf">[31]</a>
+        <a href="posters/37Yumoto_poster_CompPhysSpringSchool2023.pdf">[37]</a>
+        <a href="posters/49五十嵐亮_ニューラル構造場の導入とその結晶構造オートエンコーダーへの応用.pdf">[49]</a>
+        <a href="posters/53山口達也_春の計算物理学校.pdf">[53]</a>
+        <a href="posters/54櫻井理人_計算物理春の学校2023.pdf">[54]</a>
+      </p> -->
+      <!-- <h3>3/14 (火) 17:15 - 19:00</h3> -->
+      <!-- <ul>
+        <li>対面でのみご参加いただけます。</li>
+        <li>ポスター展示面のサイズは W90cm x H210cm (A0 サイズまで対応可能) です。</li>
+      </ul>
+      <h3>[企業紹介]</h3> -->
+      <!-- <p>
+        本スクールにご参加いただいた4つの企業の皆様より企業紹介をしていただきます。
+        [<a href="https://www.youtube.com/playlist?list=PLHCAVrtr8jcfVQb2JXyKUukcH8WCZnczt">動画</a>]
+      </p>
+      <h3>3/13 (月) 17:15 - 18:15</h3>
+      <ul>
+        <li>株式会社Preferred Networks</li>
+        <li>株式会社QunaSys</li>
+        <li>エヌビディア合同会社</li>
+        <li>オムロンサイニックエックス株式会社</li>
+      </ul> -->
+    </section>
+    <section id="last_school">
+      <h1>昨年の様子</h1>
+      <p>
+        昨年の開催概要や講義資料等につきましては、<a
+          href="https://hohno0223.github.io/comp_phys_spring_school2023/">計算物理春の学校2023ホームページ</a>をご覧ください。
+      </p>
+
+      <p>
+        また、昨年の講義の映像につきましては、<a href="https://www.youtube.com/channel/UC7zQqYdH0qH4FPrhiutRAvQ">動画公開用 Youtube チャンネル</a>をご覧ください。
+      </p>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <h4>お問い合わせ</h4>
+    <p>
+      本スクールに関するお問い合わせは、メールアドレス<a
+        herf="mailto:compphysschool2024@gmail.com">compphysschool2024@gmail.com</a>または
+      <a
+        href="https://forms.gle/qKyH1ByZR1oh2mZT6">連絡フォーム</a>
+      までお願いします。
+    </p>
+    <!-- <h4>世話人</h4>
+    <p>
+      大久保 毅 (東京大学)、大野 浩史 (筑波大学)、柏 浩司 (福岡工業大学)、川久保 亮 (QunaSys)、品岡 寛 (埼玉大学)、下川 統久朗
+      (OIST)、田中 章詞 (RIKEN AIP/iTHEMS)、富谷 昭夫 (大阪国際工科専門職大学 IPUT Osaka)、永井 佑紀 (JAEA)、二村 保徳 (筑波大学)、
+      水上 渉 (大阪大学)、和田 健太朗 (QunaSys)
+    </p> -->
+    <p>
+      本スクールは、科学研究費補助金学術変革領域研究(A)「<a href="https://mlphys.scphys.kyoto-u.ac.jp/">学習物理学の創成</a>」、
+      基盤研究(B)「次元圧縮技術が拓く二粒子応答の第一原理計算」、
+      基盤研究(B)「詳細つりあいを破るマルコフ連鎖モンテカルロ法の深化と相関の強い多体系への応用」、
+      基盤研究(C)「テンソルネットワーク変分法による有限温度フラストレート磁性体の物性解明」、
+      基盤研究(C)「有効模型データベースを用いた機能性物質の探索と設計」
+      <!-- 、および <a href="https://qunasys.com/">QunaSys</a>  -->
+      からの補助を受けています。
+    </p>
+  </footer>
+
+  <nav id="footer">
+    <a href="#top">
+      <img class="to_top" src="images/to_top.png" alt="to top" title="ページ上部へ戻る">
+    </a>
+  </nav>
+
+  <!-- Intense Images -->
+  <script src="scripts/intense.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var elements = document.querySelectorAll('.intense_images');
+    Intense(elements);
+  </script>
+</body>
+
+</html>
