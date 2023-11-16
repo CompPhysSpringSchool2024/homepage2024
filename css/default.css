@@ -86,7 +86,7 @@ main {
 
 table {
 	border-collapse: collapse; /* 隣接するセルの罫線を重ねて表示する */
-	color: #000000; /* フォントの色を指定する */
+	color: #ffffff; /* フォントの色を指定する */
 }
 td:nth-child(odd) {
 	background-color: #0738A2;/* 背景色を指定する */
