@@ -90,17 +90,17 @@ table {
 	width: 80%; /* テーブルの横幅を指定する */
 }
 td:nth-child(odd) {
-	background-color: rgba(7, 56, 162, 0.3);/* 背景色を指定する */
+	background-color: #0738A2;/* 背景色を指定する */
 	text-align: left; /* インライン要素の位置を指定する */
 	padding: 3px; /* 要素の余白を指定する(上下左右) */
 }
 td:nth-child(1) {
-	background-color: rgba(7, 56, 162, 0.3);/* 背景色を指定する */
+	background-color: #0738A2;/* 背景色を指定する */
 	text-align: center; /* インライン要素の位置を指定する */
 	padding: 3px; /* 要素の余白を指定する(上下左右) */
 }
 td:nth-child(even) {
-	background-color: rgba(20, 106, 137, 0.3);/* 背景色を指定する */
+	background-color: #146A89;/* 背景色を指定する */
 	text-align: left; /* インライン要素の位置を指定する */
 	padding: 3px; /* 要素の余白を指定する(上下左右) */
 }
