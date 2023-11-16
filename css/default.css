@@ -87,22 +87,25 @@ main {
 table {
 	border-collapse: collapse; /* 隣接するセルの罫線を重ねて表示する */
 	color: #000000; /* フォントの色を指定する */
-	width: 80%; /* テーブルの横幅を指定する */
+	width: 100%; /* テーブルの横幅を指定する */
 }
 td:nth-child(odd) {
 	background-color: #0738A2;/* 背景色を指定する */
 	text-align: left; /* インライン要素の位置を指定する */
 	padding: 3px; /* 要素の余白を指定する(上下左右) */
+	width: 19%; /* テーブルの横幅を指定する */
 }
 td:nth-child(1) {
 	background-color: #0738A2;/* 背景色を指定する */
 	text-align: center; /* インライン要素の位置を指定する */
 	padding: 3px; /* 要素の余白を指定する(上下左右) */
+	width: 5%; /* テーブルの横幅を指定する */
 }
 td:nth-child(even) {
 	background-color: #146A89;/* 背景色を指定する */
 	text-align: left; /* インライン要素の位置を指定する */
 	padding: 3px; /* 要素の余白を指定する(上下左右) */
+	width: 19%; /* テーブルの横幅を指定する */
 }
 th {
 	background-color: #31A9EE; /* 見出しの背景色を指定する */
