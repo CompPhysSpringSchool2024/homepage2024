@@ -37,7 +37,7 @@ a:hover {
 
 body {
 	margin: 0;
-	background-color: #4996F0;/* background-color: #fde3d3; */
+	background-color: #04084f;/* background-color: #fde3d3; */
 }
 
 header h1,
@@ -89,25 +89,25 @@ table {
 	color: #ffffff; /* フォントの色を指定する */
 }
 td:nth-child(odd) {
-	background-color: #0738A2;/* 背景色を指定する */
+	background-color: #341b60;/* 背景色を指定する */
 	text-align: left; /* インライン要素の位置を指定する */
-	padding: 3px; /* 要素の余白を指定する(上下左右) */
-	width: 300; /* テーブルの横幅を指定する */
+	padding: 5px; /* 要素の余白を指定する(上下左右) */
+	width: 300px; /* テーブルの横幅を指定する */
 }
 td:nth-child(1) {
-	background-color: #0738A2;/* 背景色を指定する */
+	background-color: #341b60;/* 背景色を指定する */
 	text-align: center; /* インライン要素の位置を指定する */
-	padding: 3px; /* 要素の余白を指定する(上下左右) */
-	width: 100; /* テーブルの横幅を指定する */
+	padding: 7px; /* 要素の余白を指定する(上下左右) */
+	width: 100px; /* テーブルの横幅を指定する */
 }
 td:nth-child(even) {
-	background-color: #146A89;/* 背景色を指定する */
+	background-color: #250148;/* 背景色を指定する */
 	text-align: left; /* インライン要素の位置を指定する */
-	padding: 3px; /* 要素の余白を指定する(上下左右) */
-	width: 300; /* テーブルの横幅を指定する */
+	padding: 5px; /* 要素の余白を指定する(上下左右) */
+	width: 300px; /* テーブルの横幅を指定する */
 }
 th {
-	background-color: #31A9EE; /* 見出しの背景色を指定する */
+	background-color: #031653; /* 見出しの背景色を指定する */
 }
 
 
