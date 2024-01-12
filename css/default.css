@@ -146,11 +146,12 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%; /* 画像の50%までを背景色にする例 */
+  width: 100%; /* 画像の50%までを背景色にする例 */
   height: 100%;
   background-color: white; /* 背景色を指定 */
-  z-i
-
+  z-index: -1;
+}
+	
 footer {
 	padding-top: 1rem;
 	padding-bottom: 3rem;
