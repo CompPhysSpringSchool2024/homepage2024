@@ -146,7 +146,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* 画像の50%までを背景色にする例 */
+  width: 100%; 
   height: 100%;
   background-color: white; /* 背景色を指定 */
   z-index: -1;
