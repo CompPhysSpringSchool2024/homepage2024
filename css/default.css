@@ -136,6 +136,21 @@ section {
 	background-image: url("../images/CPSchool2023_zoom_photo.png");
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* 画像の50%までを背景色にする例 */
+  height: 100%;
+  background-color: white; /* 背景色を指定 */
+  z-i
+
 footer {
 	padding-top: 1rem;
 	padding-bottom: 3rem;
